@@ -1,10 +1,12 @@
+import React from "react";
+
 type ButtonPropsType = {
     nickName: string;
     callback: () => void;
 };
 
 export const Button = (props: ButtonPropsType) => {
-    function onClickButtonHandler() {
+    const onClickButtonHandler = () => {
         props.callback();
     }
 
